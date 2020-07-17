@@ -27,9 +27,7 @@ for filename in os.listdir(appsPath):
         for rule in Rules:
             if Path(filename).suffix in rule['ext']:
                 if not os.path.exists(appsPath+rule['directory']):
-                    os.makedirs(appsPath+rule['directory'])
-                    os.rename(appsPath+filename,appsPath+rule['directory']+'/'+filename)
+                    os.makedirs(os.path.join(appsPath,rule['directory']))
+                    os.rename(os.path.join(appsPath,filename),os.path.join(appsPath,rule['directory']+'/',filename))
                 else:
-                    os.rename(appsPath+filename,appsPath+rule['directory']+'/'+filename)
-            else:
-                print("File without Rule")
+                    os.rename(os.path.join(appsPath,filename),os.path.join(appsPath,rule['directory']+'/',filename))
