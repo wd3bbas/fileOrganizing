@@ -2,12 +2,8 @@ import os
 from pathlib import Path
 from datetime import datetime
 
-print(datetime.date(datetime.now()))
-
 appsPath = "/home/wd3bbas/Downloads/"
 todayappsPath = os.path.join(appsPath,str(datetime.date(datetime.now()))+"/")
-
-print(todayappsPath)
 
 Rules = [
     {
@@ -25,6 +21,19 @@ Rules = [
     {
         "directory": 'data',
         "ext": ['.json']
+    },
+    {
+        "directory": 'compressed',
+        "ext": ['.gz','.zip','.7z','.rar']
+    },
+    {
+        "directory": 'Selenium',
+        "ext": ['.side']
+    }
+    ,
+    {
+        "directory": 'Python',
+        "ext": ['.py']
     }
 ]
 
