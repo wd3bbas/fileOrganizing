@@ -24,7 +24,7 @@ Rules = [
     },
     {
         "directory": 'compressed',
-        "ext": ['.gz','.zip','.7z','.rar']
+        "ext": ['.gz','.zip','.7z','.rar','.bz2']
     },
     {
         "directory": 'Selenium',
