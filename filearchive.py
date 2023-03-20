@@ -8,11 +8,23 @@ todayappsPath = os.path.join(appsPath,str(datetime.date(datetime.now()))+"/")
 Rules = [
     {
         "directory": 'Applications',
-        "ext": ['.deb','.exe','.run']
+        "ext": ['.deb','.exe','.run','.msi']
+    },
+    {
+        "directory": 'HAR',
+        "ext": ['.har']
+    },
+    {
+        "directory": 'RemoteDeskTop',
+        "ext": ['.rdp','.rdb']
+    },
+    {
+        "directory": 'PowerBi',
+        "ext": ['.pbix']
     },
     {
         "directory": 'Sh',
-        "ext": ['.sh']
+        "ext": ['.sh','.bat']
     },
     {
         "directory": 'pdf',
@@ -41,7 +53,7 @@ Rules = [
     },
     {
         "directory": 'Excel',
-        "ext": ['.xlsx']
+        "ext": ['.xlsx','.xlsm','.xls']
     },
     {
         "directory": 'MS Word',
@@ -52,8 +64,16 @@ Rules = [
         "ext": ['.csv']
     },
     {
+        "directory": 'TEXT',
+        "ext": ['.txt']
+    },
+    {
+        "directory": 'JMETER',
+        "ext": ['.jmx']
+    },
+    {
         "directory": 'Images',
-        "ext": ['.png','.jpg','.jpeg','.png']
+        "ext": ['.png','.jpg','.jpeg','.png','.svg']
     },
     {
        "directory": "Database",
@@ -61,11 +81,23 @@ Rules = [
     },
     {
       "directory": "TS",
-      "ext": ['.ts']
+      "ext": ['.ts','.js']
+    },
+    {
+      "directory": "Logs",
+      "ext": ['.log']
+    },
+    {
+      "directory": "NetworkDump",
+      "ext": ['.cap']
+    },
+    {
+      "directory": "ChromeExt",
+      "ext": ['.crx']
     },
     {
      "directory":"Videos",
-     "ext": ['.mkv']
+     "ext": ['.mkv','.mov','.mp4','.avi','.flv','.webm','.mwv']
     }
 
 ]
